@@ -1,0 +1,55 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1642707280189' stop='1642707297834'>
+    <name>SignUp, Sign In and Purchase Product</name>
+    <title>SignUp, Sign In and Purchase Product</title>
+    <test-cases>
+        <test-case start='1642707280336' status='passed' stop='1642707297833'>
+            <name>TC-001 Create New User SignUp</name>
+            <title>TC-001 Create New User SignUp</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='severity' value='Medium'/>
+                <label name='severity' value='critical'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.71'/>
+            </parameters>
+            <steps>
+                <step start='1642707280339' status='passed' stop='1642707280353'>
+                    <name>Given I am on the home page</name>
+                    <title>Given I am on the home page</title>
+                    <attachments>
+                        <attachment title='Console Logs' source='6db182f7-df0b-46cf-a719-3fe621d61449-attachment.html' type='text/html' size='266'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642707280354' status='passed' stop='1642707288917'>
+                    <name>Then Navigate to SignUp page</name>
+                    <title>Then Navigate to SignUp page</title>
+                    <attachments>
+                        <attachment title='Console Logs' source='10469759-b791-421d-a1e0-306219aa540b-attachment.html' type='text/html' size='234'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642707288917' status='passed' stop='1642707297832'>
+                    <name>Then create an account with random username</name>
+                    <title>Then create an account with random username</title>
+                    <attachments>
+                        <attachment title='Console Logs' source='0b808a7e-8d4b-42dc-8135-d826d5222523-attachment.html' type='text/html' size='226'/>
+                    </attachments>
+                    <steps>
+                        <step start='1642707288918' status='passed' stop='1642707288918'>
+                            <name>create an account with random username</name>
+                            <title>create an account with random username</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

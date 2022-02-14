@@ -1,0 +1,55 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1642709219527' stop='1642709459934'>
+    <name>SignUp, Sign In and Purchase Product</name>
+    <title>SignUp, Sign In and Purchase Product</title>
+    <test-cases>
+        <test-case start='1642709219674' status='broken' stop='1642709459930'>
+            <name>TC-001 Create New User SignUp</name>
+            <title>TC-001 Create New User SignUp</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='severity' value='Medium'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.71'/>
+            </parameters>
+            <steps>
+                <step start='1642709219679' status='passed' stop='1642709219699'>
+                    <name>Given I am on the home page</name>
+                    <title>Given I am on the home page</title>
+                    <attachments>
+                        <attachment title='Console Logs' source='bf7de397-6ef5-40fd-99ac-1d326955a218-attachment.html' type='text/html' size='266'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642709219700' status='passed' stop='1642709222943'>
+                    <name>Then Navigate to SignUp page</name>
+                    <title>Then Navigate to SignUp page</title>
+                    <attachments>
+                        <attachment title='Console Logs' source='34333562-6f50-460c-9420-dfa3e5273d40-attachment.html' type='text/html' size='234'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642709222944' status='broken' stop='1642709459930'>
+                    <name>Then create an account with "omarmajt122@hotmail.com" randon username</name>
+                    <title>Then create an account with "omarmajt122@hotmail.com" randon username</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='950be57c-2aa2-467a-bfb7-32f7e09853d9-attachment.png' type='image/png' size='115063'/>
+                        <attachment title='Console Logs' source='e8319652-6c05-4844-8e8a-1c7ed9c64da9-attachment.html' type='text/html' size='232'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: function timed out, ensure the promise resolves within 60000 milliseconds</message>
+                <stack-trace>Error: function timed out, ensure the promise resolves within 60000 milliseconds
+                    at Timeout._onTimeout (C:\Users\om2542\Desktop\WebDriverIOCucumber\node_modules\@cucumber\cucumber\src\user_code_runner.ts:80:18)
+                    at listOnTimeout (node:internal/timers:557:17)
+                    at processTimers (node:internal/timers:500:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

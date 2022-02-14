@@ -1,0 +1,98 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1644425644142' stop='1644425656456'>
+    <name>SignUp, Sign In and Purchase Product</name>
+    <title>SignUp, Sign In and Purchase Product</title>
+    <test-cases>
+        <test-case start='1644425644378' status='passed' stop='1644425655898'>
+            <name>TC-001 Create New User SignUp</name>
+            <title>TC-001 Create New User SignUp</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='severity' value='Medium'/>
+                <label name='severity' value='critical'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.99'/>
+            </parameters>
+            <steps>
+                <step start='1644425644388' status='passed' stop='1644425644407'>
+                    <name>Given I am on the home page</name>
+                    <title>Given I am on the home page</title>
+                    <attachments>
+                        <attachment title='Console Logs' source='e5a86d0a-56b5-442e-9b21-9add402fe81e-attachment.html' type='text/html' size='266'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1644425644407' status='passed' stop='1644425647083'>
+                    <name>Then Navigate to SignUp page</name>
+                    <title>Then Navigate to SignUp page</title>
+                    <attachments>
+                        <attachment title='Console Logs' source='f347ebfa-d832-4ae1-9426-03575c2775ef-attachment.html' type='text/html' size='234'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1644425647083' status='passed' stop='1644425655896'>
+                    <name>Then create an account with random username</name>
+                    <title>Then create an account with random username</title>
+                    <attachments>
+                        <attachment title='Console Logs' source='5f6b89d8-67cc-4512-b24d-dfed7935c949-attachment.html' type='text/html' size='226'/>
+                    </attachments>
+                    <steps>
+                        <step start='1644425647085' status='passed' stop='1644425647085'>
+                            <name>create an account with random username</name>
+                            <title>create an account with random username</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1644425655899' status='broken' stop='1644425656451'>
+            <name>TC-02 Sign In with newly created user credentials</name>
+            <title>TC-02 Sign In with newly created user credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='severity' value='Medium'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.99'/>
+            </parameters>
+            <steps>
+                <step start='1644425655901' status='broken' stop='1644425656450'>
+                    <name>Given I am on the Sign In Page</name>
+                    <title>Given I am on the Sign In Page</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='9705cf45-4abb-4117-bf83-ae465c67bf62-attachment.png' type='image/png' size='228878'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1644425656451' status='canceled' stop='1644425656452'>
+                    <name>When Login using newly created credentials</name>
+                    <title>When Login using newly created credentials</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1644425656453' status='canceled' stop='1644425656453'>
+                    <name>Then I shall verify the address information in my addresses section</name>
+                    <title>Then I shall verify the address information in my addresses section</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TypeError: Cannot read properties of undefined (reading 'isExisting')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'isExisting')
+                    at World.&lt;anonymous> (C:\Users\om2542\Desktop\WebDriverIOCucumber\features\step-definitions\/auth.step.js:30:33)
+                    at World.executeAsync (C:\Users\om2542\Desktop\WebDriverIOCucumber\node_modules\@wdio\cucumber-framework\node_modules\@wdio\utils\build\shim.js:323:27)
+                    at World.testFrameworkFnWrapper (C:\Users\om2542\Desktop\WebDriverIOCucumber\node_modules\@wdio\cucumber-framework\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

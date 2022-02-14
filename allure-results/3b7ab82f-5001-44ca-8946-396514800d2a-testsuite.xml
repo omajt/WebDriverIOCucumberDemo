@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1642707544399' stop='1642707551493'>
+    <name>SignUp, Sign In and Purchase Product</name>
+    <title>SignUp, Sign In and Purchase Product</title>
+    <test-cases>
+        <test-case start='1642707544547' status='passed' stop='1642707551493'>
+            <name>TC-001 Create New User SignUp</name>
+            <title>TC-001 Create New User SignUp</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='severity' value='Medium'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.71'/>
+            </parameters>
+            <steps>
+                <step start='1642707544550' status='passed' stop='1642707544559'>
+                    <name>Given I am on the home page</name>
+                    <title>Given I am on the home page</title>
+                    <attachments>
+                        <attachment title='Console Logs' source='fc0f6324-9888-4e39-8121-427005103454-attachment.html' type='text/html' size='266'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642707544559' status='passed' stop='1642707551299'>
+                    <name>Then Navigate to SignUp page</name>
+                    <title>Then Navigate to SignUp page</title>
+                    <attachments>
+                        <attachment title='Console Logs' source='13d1bd43-6d94-4124-9b27-80b568f2565a-attachment.html' type='text/html' size='234'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642707551300' status='passed' stop='1642707551491'>
+                    <name>Then create an account with "omarmajt12@hotmail.com" randon username</name>
+                    <title>Then create an account with "omarmajt12@hotmail.com" randon username</title>
+                    <attachments>
+                        <attachment title='Console Logs' source='b135d7e8-ab01-4bd1-b330-8d7c6e848007-attachment.html' type='text/html' size='231'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

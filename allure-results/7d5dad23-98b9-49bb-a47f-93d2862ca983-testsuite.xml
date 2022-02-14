@@ -1,0 +1,91 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1644445870247' stop='1644445887360'>
+    <name>SignUp, Sign In and Purchase Product</name>
+    <title>SignUp, Sign In and Purchase Product</title>
+    <test-cases>
+        <test-case start='1644445870418' status='passed' stop='1644445880724'>
+            <name>TC-001 Create New User SignUp</name>
+            <title>TC-001 Create New User SignUp</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='severity' value='Medium'/>
+                <label name='severity' value='critical'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-98.0.4758.82'/>
+            </parameters>
+            <steps>
+                <step start='1644445870423' status='passed' stop='1644445870439'>
+                    <name>Given I am on the home page</name>
+                    <title>Given I am on the home page</title>
+                    <attachments>
+                        <attachment title='Console Logs' source='a00a0ce8-72f5-4604-928e-3583bea2c9c1-attachment.html' type='text/html' size='266'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1644445870440' status='passed' stop='1644445874026'>
+                    <name>Then Navigate to SignUp page</name>
+                    <title>Then Navigate to SignUp page</title>
+                    <attachments>
+                        <attachment title='Console Logs' source='bd103dd1-88fb-4964-8518-c54ec68dbf98-attachment.html' type='text/html' size='234'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1644445874027' status='passed' stop='1644445880722'>
+                    <name>Then create an account with random username</name>
+                    <title>Then create an account with random username</title>
+                    <attachments>
+                        <attachment title='Console Logs' source='f752cae9-c347-41b3-ba41-5b803b7bb68d-attachment.html' type='text/html' size='226'/>
+                    </attachments>
+                    <steps>
+                        <step start='1644445874029' status='passed' stop='1644445874029'>
+                            <name>create an account with random username</name>
+                            <title>create an account with random username</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1644445880724' status='passed' stop='1644445887359'>
+            <name>TC-02 Sign In with newly created user credentials</name>
+            <title>TC-02 Sign In with newly created user credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='severity' value='Medium'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-98.0.4758.82'/>
+            </parameters>
+            <steps>
+                <step start='1644445880725' status='passed' stop='1644445883823'>
+                    <name>Given I am on the Sign In Page</name>
+                    <title>Given I am on the Sign In Page</title>
+                    <attachments>
+                        <attachment title='Console Logs' source='21b39194-ecee-4481-b7c5-aebe8cf83d2c-attachment.html' type='text/html' size='252'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1644445883823' status='passed' stop='1644445885665'>
+                    <name>When Login using newly created credentials</name>
+                    <title>When Login using newly created credentials</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1644445885666' status='passed' stop='1644445887358'>
+                    <name>Then I shall verify the address information in my addresses section</name>
+                    <title>Then I shall verify the address information in my addresses section</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

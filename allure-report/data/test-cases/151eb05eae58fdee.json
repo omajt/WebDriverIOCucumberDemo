@@ -1,0 +1,154 @@
+{
+  "uid" : "151eb05eae58fdee",
+  "name" : "TC-001 Create New User SignUp",
+  "fullName" : "SignUp, Sign In and Purchase Product.TC-001 Create New User SignUp",
+  "historyId" : "e1c6b3d8e9f23146892daa2707993cfd",
+  "time" : {
+    "start" : 1642546120228,
+    "stop" : 1642546129396,
+    "duration" : 9168
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given I am on the home page",
+      "time" : {
+        "start" : 1642546120231,
+        "stop" : 1642546120256,
+        "duration" : 25
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "cc4e097a53025c57",
+        "name" : "Console Logs",
+        "source" : "cc4e097a53025c57.html",
+        "type" : "text/html",
+        "size" : 266
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "Then Navigate to SignUp page",
+      "time" : {
+        "start" : 1642546120257,
+        "stop" : 1642546123357,
+        "duration" : 3100
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "49a4fdd6a1a2683e",
+        "name" : "Console Logs",
+        "source" : "49a4fdd6a1a2683e.html",
+        "type" : "text/html",
+        "size" : 234
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "Then create an account with random username",
+      "time" : {
+        "start" : 1642546123357,
+        "stop" : 1642546129393,
+        "duration" : 6036
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "create an account with random username",
+        "time" : {
+          "start" : 1642546123359,
+          "stop" : 1642546123359,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ {
+        "uid" : "8993040cc9966210",
+        "name" : "Console Logs",
+        "source" : "8993040cc9966210.html",
+        "type" : "text/html",
+        "size" : 226
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 3
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "severity",
+    "value" : "Medium"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "SignUp, Sign In and Purchase Product"
+  }, {
+    "name" : "testClass",
+    "value" : "SignUp, Sign In and Purchase Product"
+  }, {
+    "name" : "testMethod",
+    "value" : "TC-001 Create New User SignUp"
+  }, {
+    "name" : "package",
+    "value" : "SignUp, Sign In and Purchase Product"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-97.0.4692.71"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "151eb05eae58fdee.json",
+  "parameterValues" : [ "chrome-97.0.4692.71" ]
+}

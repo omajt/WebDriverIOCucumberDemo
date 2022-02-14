@@ -1,0 +1,204 @@
+{
+  "uid" : "3edf15d2b179b3db",
+  "name" : "TC-001 Create New User SignUp",
+  "fullName" : "SignUp, Sign In and Purchase Product.TC-001 Create New User SignUp",
+  "historyId" : "e1c6b3d8e9f23146892daa2707993cfd",
+  "time" : {
+    "start" : 1642707544547,
+    "stop" : 1642707551493,
+    "duration" : 6946
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 8,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given I am on the home page",
+      "time" : {
+        "start" : 1642707544550,
+        "stop" : 1642707544559,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "22ff0d5766c27373",
+        "name" : "Console Logs",
+        "source" : "22ff0d5766c27373.html",
+        "type" : "text/html",
+        "size" : 266
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "Then Navigate to SignUp page",
+      "time" : {
+        "start" : 1642707544559,
+        "stop" : 1642707551299,
+        "duration" : 6740
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "47d6c01e3b67bba3",
+        "name" : "Console Logs",
+        "source" : "47d6c01e3b67bba3.html",
+        "type" : "text/html",
+        "size" : 234
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "Then create an account with \"omarmajt12@hotmail.com\" randon username",
+      "time" : {
+        "start" : 1642707551300,
+        "stop" : 1642707551491,
+        "duration" : 191
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "249c0e3c85702a4e",
+        "name" : "Console Logs",
+        "source" : "249c0e3c85702a4e.html",
+        "type" : "text/html",
+        "size" : 231
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 3
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "severity",
+    "value" : "Medium"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "SignUp, Sign In and Purchase Product"
+  }, {
+    "name" : "testClass",
+    "value" : "SignUp, Sign In and Purchase Product"
+  }, {
+    "name" : "testMethod",
+    "value" : "TC-001 Create New User SignUp"
+  }, {
+    "name" : "package",
+    "value" : "SignUp, Sign In and Purchase Product"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-97.0.4692.71"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "374957ddb0d5779c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642707280336,
+        "stop" : 1642707297833,
+        "duration" : 17497
+      }
+    }, {
+      "uid" : "efaf2eface67caef",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642612683643,
+        "stop" : 1642612686931,
+        "duration" : 3288
+      }
+    }, {
+      "uid" : "7428705b0a9bfd30",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642611993673,
+        "stop" : 1642611993741,
+        "duration" : 68
+      }
+    }, {
+      "uid" : "9c344a75693bfca9",
+      "status" : "broken",
+      "statusDetails" : "TypeError: _home.default.navigateToLoginpage is not a function",
+      "time" : {
+        "start" : 1642611876927,
+        "stop" : 1642611879822,
+        "duration" : 2895
+      }
+    }, {
+      "uid" : "151eb05eae58fdee",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642546120228,
+        "stop" : 1642546129396,
+        "duration" : 9168
+      }
+    }, {
+      "uid" : "e4abe65fcf915241",
+      "status" : "broken",
+      "statusDetails" : "Error: element (\"(//div[@class='radio'])[3]\") still not existing after 15000ms",
+      "time" : {
+        "start" : 1642546002203,
+        "stop" : 1642546023135,
+        "duration" : 20932
+      }
+    }, {
+      "uid" : "8441e03697bc2625",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642545878889,
+        "stop" : 1642545891276,
+        "duration" : 12387
+      }
+    }, {
+      "uid" : "c516f55b95dd4096",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642545826899,
+        "stop" : 1642545837056,
+        "duration" : 10157
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3edf15d2b179b3db.json",
+  "parameterValues" : [ "chrome-97.0.4692.71" ]
+}

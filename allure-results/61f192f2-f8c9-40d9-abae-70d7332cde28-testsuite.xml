@@ -1,0 +1,106 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1644426214715' stop='1644426230603'>
+    <name>SignUp, Sign In and Purchase Product</name>
+    <title>SignUp, Sign In and Purchase Product</title>
+    <test-cases>
+        <test-case start='1644426214910' status='passed' stop='1644426226630'>
+            <name>TC-001 Create New User SignUp</name>
+            <title>TC-001 Create New User SignUp</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='severity' value='Medium'/>
+                <label name='severity' value='critical'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.99'/>
+            </parameters>
+            <steps>
+                <step start='1644426214921' status='passed' stop='1644426214941'>
+                    <name>Given I am on the home page</name>
+                    <title>Given I am on the home page</title>
+                    <attachments>
+                        <attachment title='Console Logs' source='b21396b5-ac97-4154-94c2-1728e4987324-attachment.html' type='text/html' size='266'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1644426214942' status='passed' stop='1644426218074'>
+                    <name>Then Navigate to SignUp page</name>
+                    <title>Then Navigate to SignUp page</title>
+                    <attachments>
+                        <attachment title='Console Logs' source='c34c7345-67af-49c1-a941-b6aad36843b4-attachment.html' type='text/html' size='234'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1644426218074' status='passed' stop='1644426226627'>
+                    <name>Then create an account with random username</name>
+                    <title>Then create an account with random username</title>
+                    <attachments>
+                        <attachment title='Console Logs' source='10225feb-381f-4613-8a14-62a09003be6f-attachment.html' type='text/html' size='226'/>
+                    </attachments>
+                    <steps>
+                        <step start='1644426218076' status='passed' stop='1644426218076'>
+                            <name>create an account with random username</name>
+                            <title>create an account with random username</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1644426226630' status='broken' stop='1644426230595'>
+            <name>TC-02 Sign In with newly created user credentials</name>
+            <title>TC-02 Sign In with newly created user credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='severity' value='Medium'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.99'/>
+            </parameters>
+            <steps>
+                <step start='1644426226632' status='passed' stop='1644426230559'>
+                    <name>Given I am on the Sign In Page</name>
+                    <title>Given I am on the Sign In Page</title>
+                    <attachments>
+                        <attachment title='Console Logs' source='54e203cb-047f-4a8b-b757-f5bc0eb2571a-attachment.html' type='text/html' size='252'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1644426230560' status='broken' stop='1644426230593'>
+                    <name>When Login using newly created credentials</name>
+                    <title>When Login using newly created credentials</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1644426230598' status='canceled' stop='1644426230600'>
+                    <name>Then I shall verify the address information in my addresses section</name>
+                    <title>Then I shall verify the address information in my addresses section</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: function uses multiple asynchronous interfaces: callback and promise</message>
+                <stack-trace>Error: function uses multiple asynchronous interfaces: callback and promise
+                to use the callback interface: do not return a promise
+                to use the promise interface: remove the last argument to the function
+                    at Object.run (C:\Users\om2542\Desktop\WebDriverIOCucumber\node_modules\@cucumber\cucumber\src\user_code_runner.ts:51:16)
+                    at Object.run (C:\Users\om2542\Desktop\WebDriverIOCucumber\node_modules\@cucumber\cucumber\src\runtime\step_runner.ts:53:41)
+                    at TestCaseRunner.invokeStep (C:\Users\om2542\Desktop\WebDriverIOCucumber\node_modules\@cucumber\cucumber\src\runtime\test_case_runner.ts:131:12)
+                    at TestCaseRunner.runStep (C:\Users\om2542\Desktop\WebDriverIOCucumber\node_modules\@cucumber\cucumber\src\runtime\test_case_runner.ts:316:20)
+                    at C:\Users\om2542\Desktop\WebDriverIOCucumber\node_modules\@cucumber\cucumber\src\runtime\test_case_runner.ts:222:36
+                    at TestCaseRunner.aroundTestStep (C:\Users\om2542\Desktop\WebDriverIOCucumber\node_modules\@cucumber\cucumber\src\runtime\test_case_runner.ts:164:28)
+                    at TestCaseRunner.run (C:\Users\om2542\Desktop\WebDriverIOCucumber\node_modules\@cucumber\cucumber\src\runtime\test_case_runner.ts:203:9)
+                    at Runtime.runTestCase (C:\Users\om2542\Desktop\WebDriverIOCucumber\node_modules\@cucumber\cucumber\src\runtime\index.ts:123:20)
+                    at C:\Users\om2542\Desktop\WebDriverIOCucumber\node_modules\@cucumber\cucumber\src\runtime\index.ts:153:7</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

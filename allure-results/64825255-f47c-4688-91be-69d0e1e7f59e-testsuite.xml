@@ -1,0 +1,52 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1642611876769' stop='1642611879827'>
+    <name>SignUp, Sign In and Purchase Product</name>
+    <title>SignUp, Sign In and Purchase Product</title>
+    <test-cases>
+        <test-case start='1642611876927' status='broken' stop='1642611879822'>
+            <name>TC-001 Create New User SignUp</name>
+            <title>TC-001 Create New User SignUp</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='severity' value='Medium'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.71'/>
+            </parameters>
+            <steps>
+                <step start='1642611876931' status='passed' stop='1642611876951'>
+                    <name>Given I am on the home page</name>
+                    <title>Given I am on the home page</title>
+                    <attachments>
+                        <attachment title='Console Logs' source='d5d22e99-031b-4607-b212-b6dcd4d72245-attachment.html' type='text/html' size='266'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642611876952' status='broken' stop='1642611879822'>
+                    <name>Then Navigate to SignUp page</name>
+                    <title>Then Navigate to SignUp page</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='545eed99-03ce-4641-92f7-e84b2450c357-attachment.png' type='image/png' size='1612501'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642611879823' status='canceled' stop='1642611879823'>
+                    <name>Then create an account with "omarmajt1@hotmail.com" randon username</name>
+                    <title>Then create an account with "omarmajt1@hotmail.com" randon username</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TypeError: _home.default.navigateToLoginpage is not a function</message>
+                <stack-trace>TypeError: _home.default.navigateToLoginpage is not a function
+                    at World.&lt;anonymous> (C:\Users\om2542\Desktop\WebDriverIOCucumber\features\step-definitions\/home.step.js:6:20)
+                    at World.executeAsync (C:\Users\om2542\Desktop\WebDriverIOCucumber\node_modules\@wdio\cucumber-framework\node_modules\@wdio\utils\build\shim.js:323:27)
+                    at World.testFrameworkFnWrapper (C:\Users\om2542\Desktop\WebDriverIOCucumber\node_modules\@wdio\cucumber-framework\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

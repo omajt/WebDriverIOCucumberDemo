@@ -1,0 +1,69 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1642546002011' stop='1642546023139'>
+    <name>SignUp, Sign In and Purchase Product</name>
+    <title>SignUp, Sign In and Purchase Product</title>
+    <test-cases>
+        <test-case start='1642546002203' status='broken' stop='1642546023135'>
+            <name>TC-001 Create New User SignUp</name>
+            <title>TC-001 Create New User SignUp</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='severity' value='Medium'/>
+                <label name='severity' value='critical'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.71'/>
+            </parameters>
+            <steps>
+                <step start='1642546002225' status='passed' stop='1642546002246'>
+                    <name>Given I am on the home page</name>
+                    <title>Given I am on the home page</title>
+                    <attachments>
+                        <attachment title='Console Logs' source='4b7953a2-cfd7-4b16-84d9-cc4db3f27ae3-attachment.html' type='text/html' size='266'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642546002247' status='passed' stop='1642546007442'>
+                    <name>Then Navigate to SignUp page</name>
+                    <title>Then Navigate to SignUp page</title>
+                    <attachments>
+                        <attachment title='Console Logs' source='16ed7765-3c02-4917-af56-2970afc71eda-attachment.html' type='text/html' size='234'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642546007443' status='broken' stop='1642546023134'>
+                    <name>Then create an account with random username</name>
+                    <title>Then create an account with random username</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='c1aec4dd-7c52-40a2-930f-7e46f9cb9ca9-attachment.png' type='image/png' size='194506'/>
+                        <attachment title='Console Logs' source='8505dbb4-2255-4bf6-a5a9-cf881d822eb0-attachment.html' type='text/html' size='226'/>
+                    </attachments>
+                    <steps>
+                        <step start='1642546007444' status='passed' stop='1642546007444'>
+                            <name>create an account with random username</name>
+                            <title>create an account with random username</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: element ("(//div[@class='radio'])[3]") still not existing after 15000ms</message>
+                <stack-trace>Error: element ("(//div[@class='radio'])[3]") still not existing after 15000ms
+                    at C:\Users\om2542\Desktop\WebDriverIOCucumber\node_modules\webdriverio\build\commands\browser\waitUntil.js:66:23
+                    at Element.wrapCommandFn (C:\Users\om2542\Desktop\WebDriverIOCucumber\node_modules\@wdio\utils\build\shim.js:131:29)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\om2542\Desktop\WebDriverIOCucumber\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at Element.wrapCommandFn (C:\Users\om2542\Desktop\WebDriverIOCucumber\node_modules\@wdio\utils\build\shim.js:131:29)
+                    at Element.wrapCommandFn (C:\Users\om2542\Desktop\WebDriverIOCucumber\node_modules\@wdio\utils\build\shim.js:131:29)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\om2542\Desktop\WebDriverIOCucumber\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at Element.wrapCommandFn (C:\Users\om2542\Desktop\WebDriverIOCucumber\node_modules\@wdio\utils\build\shim.js:131:29)
+                    at AuthPage.createAccount (C:\Users\om2542\Desktop\WebDriverIOCucumber\features\pageobjects\/auth.page.js:138:7)
+                    at World.&lt;anonymous> (C:\Users\om2542\Desktop\WebDriverIOCucumber\features\step-definitions\/auth.step.js:25:3)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,11 @@
+[ {
+  "uid" : "3edf15d2b179b3db",
+  "name" : "TC-001 Create New User SignUp",
+  "time" : {
+    "start" : 1642707544547,
+    "stop" : 1642707551493,
+    "duration" : 6946
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
