@@ -2,6 +2,7 @@
     "compilerOptions": {
         "types": [
             "node",
+            "jest",
             "webdriverio/async",
             "@wdio/cucumber-framework"
         ]
