@@ -1,4 +1,4 @@
-import {Given, When, Then, And } from "@cucumber/cucumber"; 
+import {Given, When, Then} from "@cucumber/cucumber"; 
 import homePage from "../pageobjects/home.Page";
 
 Then (/^Navigate to SignUp page$/ , async () => {

@@ -1,4 +1,4 @@
-import {Given, When, Then, And} from "@cucumber/cucumber";
+import {Given, When, Then} from "@cucumber/cucumber";
 import productPage from "../pageobjects/product.page";
 
 When(/^I add below products to cart$/, async (table) => {
@@ -13,6 +13,6 @@ Then(/^I am on the contact page$/, async () => {
        await commonPage.vaerifyPageHeading("CUSTOMER SERVICE - CONTACT US");
 });
      
-And(/^I send refund request to customer care for prev. order$/, async () => {
+Then(/^I send refund request to customer care for prev. order$/, async () => {
        await conatctPage.sendMessageToCustomerCare();
 });
