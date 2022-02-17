@@ -1,0 +1,13 @@
+{
+    "root": true,
+    "extends": ["eslint:recommended", "prettier", "plugin:wdio/recommended"],
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "parser": "@babel/eslint-parser",
+    "plugins": ["wdio"]
+}
