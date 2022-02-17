@@ -7,7 +7,7 @@
     "test": "wdio",
     "regression": "wdio wdio.conf.js",
     "generate-report": "allure generate allure-results --clean && allure open",
-    "lint": "eslint '**/*.js'",
+    "lint": "gherkin-lint && eslint '**/*.js'",
     "format": "prettier --write '**/*.{js,json,md}'"
   },
   "author": "\"Omar Majt\"",
@@ -26,6 +26,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-wdio": "^7.4.2",
     "faker": "^5.5.3",
+    "gherkin-lint": "^4.2.2",
     "prettier": "^2.5.1",
     "wdio-chromedriver-service": "^7.2.2",
     "wdio-cucumberjs-json-reporter": "^4.1.4"
