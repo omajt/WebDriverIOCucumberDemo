@@ -224,7 +224,7 @@ exports.config = {
      * @param {Array.<String>} specs        List of spec file paths that are to be run
      * @param {Object}         browser      instance of created browser/device session
      */
-    before: function (capabilities, specs) {  
+    before: function () {  
 
         allureReporter.addLabel("Initial configuration");
       },
@@ -256,7 +256,7 @@ exports.config = {
      * @param {ITestCaseHookParameter} world    world object containing information on pickle and test step
      * @param {Object}                 context  Cucumber World object
      */
-    beforeScenario: function (world, context) {
+    beforeScenario: function () {
         allureReporter.addSeverity("Medium");
     },
     /**

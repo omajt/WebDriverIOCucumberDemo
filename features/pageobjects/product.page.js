@@ -1,4 +1,3 @@
-import sharedPage from "./shared.page";
 
 class ProductPage{
 
