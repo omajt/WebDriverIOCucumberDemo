@@ -1,20 +1,14 @@
-import {Given, When, Then } from "@cucumber/cucumber"; 
+import { Given, When, Then } from "@cucumber/cucumber";
 import homePage from "../pageobjects/home.Page";
 import sharedPage from "../pageobjects/shared.page";
 
+Given(/^I am on the home page$/, async () => {
+    sharedPage.openHomePage();
+    // await expect(homePage.buttonSignIn).toBePresent();
+    // await expect(homePage.img_Logo).toBePresent();
+    // await expect(homePage.link_Contact).toBePresent();
 
-
-
-
-Given (/^I am on the home page$/ , async () => {
-
-sharedPage.openHomePage();
-// await expect(homePage.buttonSignIn).toBePresent();
-// await expect(homePage.img_Logo).toBePresent();
-// await expect(homePage.link_Contact).toBePresent();
-
-// homePage.navigateToLoginPage();
-
+    // homePage.navigateToLoginPage();
 });
 // Then (/^Navigate to SignUp page$/ , async () => {
 
