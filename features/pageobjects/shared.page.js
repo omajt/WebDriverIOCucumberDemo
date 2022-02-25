@@ -4,7 +4,7 @@ class sharedPage {
         console.log(
             "Navigate to Url 'http://automationpractice.com/index.php'"
         );
-        const browserTitle = browser.getTitle();
+        //const browserTitle = browser.getTitle();
         // Assert
     }
 

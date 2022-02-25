@@ -3,7 +3,6 @@ import faker from "faker";
 import authPage from "../pageobjects/auth.page";
 import HomePage from "../pageobjects/home.page";
 import allureReporter from "@wdio/allure-reporter";
-import utils from "../utils/Utils";
 
 Then(/^create an account with random username$/, async () => {
     console.log("account creation ");
