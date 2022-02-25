@@ -9,15 +9,15 @@
         "on", {
             "Feature": 0,
             "Background": 0,
-            "Scenario": 0,
+            "Scenario": 4,
             "Step": 4,
             "Examples": 0,
             "example": 4,
-            "given": 4,
-            "when": 4,
-            "then": 4,
+            "given": 8,
+            "when": 8,
+            "then": 8,
             "feature tag": 0,
-            "scenario tag": 0
+            "scenario tag": 4
         }
     ],
     "keywords-in-logical-order": "on",
