@@ -1,4 +1,4 @@
-import { Given, Then } from "@cucumber/cucumber";
+import { Then } from "@cucumber/cucumber";
 import myaccount from "../pageobjects/myaccount.page";
 
 Then(

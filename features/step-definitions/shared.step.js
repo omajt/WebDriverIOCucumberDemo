@@ -1,5 +1,5 @@
-import { Given, When, Then } from "@cucumber/cucumber";
-import homePage from "../pageobjects/home.Page";
+import { Given } from "@cucumber/cucumber";
+//import homePage from "../pageobjects/home.Page";
 import sharedPage from "../pageobjects/shared.page";
 
 Given(/^I am on the home page$/, async () => {
