@@ -14,8 +14,8 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/eslint-parser": "^7.17.0",
-    "eslint": "^8.9.0",
-    "eslint-config-prettier": "^8.3.0",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-wdio": "^7.4.2",
     "faker": "^5.5.3",
     "gherkin-lint": "^4.2.2",
