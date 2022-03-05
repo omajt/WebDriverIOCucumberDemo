@@ -10,7 +10,7 @@
     "lint": "gherkin-lint && eslint '**/*.js'",
     "format": "prettier --write '**/*.{js,json,md}'"
   },
-  "author": "\"Omar Majt\"",
+  "author": "Omar Majt",
   "license": "ISC",
   "devDependencies": {
     "@babel/eslint-parser": "^7.17.0",
