@@ -24,5 +24,12 @@ jobs:
       - name: installer
         run: npm install
 
+      - name: Copy Environment
+        uses: SpicyPizza/create-envfile@v1.3
+        with:
+          envkey_BASE_URL: "http://automationpractice.com"
+          envkey_SELENIUM: "selenium/standalone-chrome"
+          file_name: .env
+
       - name: regression
         run: npm run regression
