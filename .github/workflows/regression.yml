@@ -1,0 +1,28 @@
+# This workflow will run regression tests using node and docker
+
+name: Regression Tester
+
+on:
+  pull_request: null
+  push:
+    branches:
+      - master
+
+jobs:
+  build: 
+    name: regression
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+
+      - name: installer
+        run: npm install
+
+      - name: regression
+        run: npm run regression
