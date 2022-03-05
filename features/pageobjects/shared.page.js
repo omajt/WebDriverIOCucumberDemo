@@ -1,9 +1,11 @@
+require("dotenv").config();
+
 class sharedPage {
     openHomePage() {
-        browser.url("http://automationpractice.com/index.php");
-        console.log(
-            "Navigate to Url 'http://automationpractice.com/index.php'"
-        );
+        const homepage = process.env.BASE_URL;
+
+        browser.url(homepage);
+        console.log("Navigate to URL: " + homepage);
         //const browserTitle = browser.getTitle();
         // Assert
     }
