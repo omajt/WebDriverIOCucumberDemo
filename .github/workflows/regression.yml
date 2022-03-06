@@ -32,4 +32,4 @@ jobs:
           file_name: .env
 
       - name: regression
-        run: npm run regression
+        run: npm run regression:docker-headless

@@ -4,8 +4,9 @@
   "description": "Cucumber Webdriverio v7 Project",
   "main": "index.js",
   "scripts": {
-    "test": "wdio",
     "regression": "wdio wdio.conf.js --cucumberOpts.tagExpression",
+    "regression:docker": "wdio wdio.docker.conf.js --cucumberOpts.tagExpression",
+    "regression:docker-headless": "wdio wdio.docker-headless.conf.js --cucumberOpts.tagExpression",
     "generate-report": "allure generate allure-results --clean && allure open",
     "lint": "gherkin-lint && eslint '**/*.js'",
     "format": "prettier --write '**/*.{js,json,md}'"
@@ -33,7 +34,9 @@
     "@wdio/spec-reporter": "^7.16.14",
     "allure-commandline": "^2.17.2",
     "chai": "^4.3.4",
+    "chromedriver": "^98.0.1",
     "dotenv": "^16.0.0",
+    "wdio-chromedriver-service": "^7.2.8",
     "wdio-cucumberjs-json-reporter": "^4.1.4",
     "wdio-docker-service": "^3.2.0"
   }
