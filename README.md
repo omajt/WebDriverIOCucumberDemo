@@ -2,8 +2,8 @@
 
 ## Requirements
 
-* npm
-* Docker
+-   npm
+-   Docker
 
 ## Installation
 
@@ -17,5 +17,5 @@
 
 ### Watch the tests in the browser
 
-* When the test starts, open your browser to `http:localhost:7900"
-* **Note:** The password is "secret"
+-   When the test starts, open your browser to `http:localhost:7900"
+-   **Note:** The password is "secret"

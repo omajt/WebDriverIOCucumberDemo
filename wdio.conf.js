@@ -32,7 +32,7 @@ exports.config = {
     // then the current working directory is where your `package.json` resides, so `wdio`
     // will be called from there.
     //
-    specs: ["./features/*.feature"],
+    specs: ["./features/**/*.feature"],
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -121,7 +121,7 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ["docker"],
+    services: ["chromedriver", "docker"],
 
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
