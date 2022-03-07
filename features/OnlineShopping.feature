@@ -6,6 +6,7 @@ Feature: SignUp, Sign In and Purchase Product
         Then Navigate to SignUp page
         #Then create an account with "omarmajt122@hotmail.com" randon username
         Then create an account with random username
+
     @Scenario2
     Scenario: TC-02 Sign In with newly created user credentials
         Given I am on the Sign In Page
