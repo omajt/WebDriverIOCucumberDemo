@@ -1,13 +1,9 @@
-import { config as sharedConfg } from './wdio.shared.conf.js'
+import { config as sharedConfg } from "./shared.js";
 
 exports.config = {
     ...sharedConfg,
     ...{
-        services: ['docker'],
-        capabilities: [{
-            browserName: 'chrome',
-            acceptInsecureCerts: true,
-        }],
+        services: ["docker"],
         dockerOptions: {
             image: process.env.SELENIUM,
             healthCheck: "http://localhost:4444",
@@ -16,5 +12,11 @@ exports.config = {
                 shmSize: "2g",
             },
         },
-    }
-}
+        capabilities: [
+            {
+                browserName: "chrome",
+                acceptInsecureCerts: true,
+            },
+        ],
+    },
+};
