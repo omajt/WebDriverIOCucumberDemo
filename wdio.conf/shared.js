@@ -1,13 +1,6 @@
 import allureReporter from "@wdio/allure-reporter";
 import cucumberJson from "wdio-cucumberjs-json-reporter";
-
-let allure_config = {
-    outputDir: "allure-results",
-    disableWebdriverStepsReporting: true,
-    disableWebdriverScreenshotsReporting: false,
-    useCucumberStepReporter: true,
-    addConsoleLogs: true,
-};
+import "dotenv/config";
 
 exports.config = {
     //
@@ -31,7 +24,7 @@ exports.config = {
     // then the current working directory is where your `package.json` resides, so `wdio`
     // will be called from there.
     //
-    specs: ["./features/*.feature"],
+    specs: ["./features/**/*.feature"],
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -60,11 +53,6 @@ exports.config = {
     //
     capabilities: [
         {
-            // maxInstances can get overwritten per capability. So if you have an in-house Selenium
-            // grid with only 5 firefox instances available you can make sure that not more than
-            // 5 instances get started at a time.
-            maxInstances: 5,
-            //
             browserName: "chrome",
             acceptInsecureCerts: true,
             // If outputDir is provided WebdriverIO can capture driver session logs
@@ -104,7 +92,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: "http://localhost",
+    baseUrl: process.env.BASE_URL,
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -120,7 +108,7 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ["chromedriver"],
+    services: ["docker"],
 
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
@@ -144,7 +132,16 @@ exports.config = {
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: [
         "spec",
-        ["allure", allure_config],
+        [
+            "allure",
+            {
+                outputDir: "allure-results",
+                disableWebdriverStepsReporting: true,
+                disableWebdriverScreenshotsReporting: false,
+                useCucumberStepReporter: true,
+                addConsoleLogs: true,
+            },
+        ],
 
         [
             "cucumberjs-json",
