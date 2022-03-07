@@ -7,8 +7,9 @@
 
 ## Installation
 
-1. Copy `.env.dis` to `.env`
+1. Copy and paste `.env.dist` as `.env`
 1. In `.env`, ensure that your version of selenium is compatible with your system's architecture. ex. Macs with the M1 processor MUST use the `seleniarm` version.
+1. Install required libraries and packages via `npm install`
 
 ## Run Tests
 
